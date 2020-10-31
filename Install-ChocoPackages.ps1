@@ -1,9 +1,14 @@
 
 function Install-ChocoPackages {
 
-    # Essentials
+    # Tools
+    choco install cascadiafonts -y
+    choco install microsoft-windows-terminal -y 
+    choco install pwsh -y
     choco install git -y
     choco install nodejs.install -y
+    choco install github-desktop -y
+    choco install gh -y
 
     # Browsers
     choco install googlechrome -y
@@ -24,13 +29,7 @@ function Install-ChocoPackages {
 
     # Development
     choco install vscode -y
-    choco install dotnetcore-sdk -y 
-    
-    # Tools
-    choco install cascadiafonts -y
-    choco install microsoft-windows-terminal -y 
-    choco install pwsh -y
-    
+    choco install dotnetcore-sdk -y     
 }
 
 Install-ChocoPackages
